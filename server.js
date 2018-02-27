@@ -55,7 +55,7 @@ events.on('connection', function (socket) {
   socket.on('snakeUpdate', function(data){
   	// console.log(data);
   	currentSnake = data;
-    //events.emit('snakeUpdate', currentSnake);
+    events.emit('snakeUpdate', currentSnake);
   });
 
 
